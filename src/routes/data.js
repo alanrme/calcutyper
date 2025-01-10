@@ -1,6 +1,14 @@
 export const keymaps = [
     {
         model: "991ex",
+        name: "fx-991EX",
+        alternatives: {
+            "1": ["I", "l", "i"],
+            "2": ["Z", "z"],
+            "5": ["S", "s"],
+            "8": ["B"],
+            "0": ["O"]
+        },
         keymap: {
             "A": {
                 description: "Memory A",
