@@ -47,9 +47,11 @@
             <textarea class="rounded-md font{data.model} display{data.model} flex-grow" id="calc-display" spellcheck="false" autocorrect="off" autocapitalize="off" bind:value={display} oninput={checkInput}></textarea>
             <button class="rounded-md bg-slate-900 text-white px-3" onclick={clear}>Del</button>
         </div>
-        <div class="grid grid-flow-row grid-cols-[repeat(auto-fill,5rem)] overflow-y-auto">
+        <div class="grid grid-flow-row grid-cols-5 lg:grid-cols-7 overflow-y-auto gap-2">
+            <div class="col-span-5 lg:col-span-7 mt-2">Click a character below to enter it (or click the textbox above and type)</div>
             {#each Object.keys(data.keymap) as [key]}
-            <div class="rounded-md border border-black m-2 p-2 flex flex-col justify-center items-center" onclick={() => type(key)}>
+            <!--svelte-ignore a11y_click_events_have_key_events a11y-no-static-element-interactions-->
+            <div role="button" tabindex="0" class="rounded-md border border-black p-2 flex flex-col justify-center items-center" onclick={() => type(key)}>
                 <span class="font{data.model} text-2xl my-1">{key}</span>
                 <button class="bg-slate-300 px-2 rounded-md" onclick={(e) => { e.stopPropagation(); keyInfoOpen(key) }}>Info</button>
                 <!--{val.description} <span class="keymap{data.model}">{val.keys.join("")}</span>-->
@@ -58,6 +60,7 @@
         </div>
     </div>
     <div class="p-2 row-span-1 overflow-y-auto">
+        <div class="">Press these keys on your calculator:</div>
         {#key display}
         {#each display.split("") as key}
         <div>

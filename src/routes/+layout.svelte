@@ -6,7 +6,6 @@
 	import { keymaps } from './data.js';
 	let models = {}
 	keymaps.forEach((a) => { models[a.model] = a.name })
-	console.log(keymaps,models)
 
 	let shown = $state(false)
 	let toggleMenu = () => {
