@@ -18,7 +18,7 @@
             } else if (data.keymap[key.toLowerCase()]) {
                 display += key.toLowerCase()
             } else {
-                let newKey = data.alternatives.keys(data.alternatives).find(k => data.alternatives[k].contains(key))
+                let newKey = Object.keys(data.alternatives).find(k => data.alternatives[k].includes(key))
                 if (newKey)
                     display += newKey
             }
