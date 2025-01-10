@@ -12,8 +12,10 @@
 					<div class="flex space-x-4">
 						<a href="{base}/" class="rounded-md bg-slate-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a>
 						<a href="{base}/991ex" class="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-slate-700 hover:text-white">fx-991EX</a>
+						<!--
 						<a href="{base}/991esp" class="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-slate-700 hover:text-white">fx-991ES PLUS</a>
 						<a href="{base}/991ms" class="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-slate-700 hover:text-white">fx-991MS</a>
+						-->
 					</div>
 				</div>
 			</div>
