@@ -10,8 +10,8 @@ const config = {
 			fallback: '404.html'
 		}),
 		paths: {
-			base: process.argv.includes('dev') ? '' : "/calcutyper",//process.env.BASE_PATH
-			assets: process.argv.includes('dev') ? '' : `https://alanrme.github.io/${process.env.BASE_PATH}`
+			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH,
+			//assets: process.argv.includes('dev') ? '' : `https://alanrme.github.io/${process.env.BASE_PATH}`
 		}
 
 	}
