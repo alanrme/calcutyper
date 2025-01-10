@@ -6,8 +6,10 @@ export const keymaps = [
             "1": ["I", "l", "i"],
             "2": ["Z", "z"],
             "5": ["S", "s"],
-            "8": ["B"],
-            "0": ["O"]
+            "0": ["O"],
+            "/": ["÷"],
+            "*": ["×"],
+            ".": [" "]
         },
         keymap: {
             "A": {
@@ -221,6 +223,225 @@ export const keymaps = [
             "^": { // italic F
                 description: "Faraday constant",
                 keys: ["q","7","4","2"]
+            },
+            "!": {
+                description: "Factorial",
+                keys: ["q","u"]
+            },
+            "+": {
+                description: "Addition symbol",
+                keys: ["+"]
+            },
+            "*": {
+                description: "Multiplication symbol",
+                keys: ["O"]
+            },
+            "/": {
+                description: "Division symbol",
+                keys: ["P"]
+            },
+            "-": {
+                description: "Subtraction symbol",
+                keys: ["p"]
+            }
+        }
+    },
+    {
+        model: "991esp",
+        name: "fx-991ES PLUS",
+        alternatives: {
+            "1": ["I", "l", "i"],
+            "2": ["Z", "z"],
+            "5": ["S", "s"],
+            "0": ["O"],
+            "/": ["÷"],
+            "*": ["×"],
+            ".": [" "]
+        },
+        keymap: {
+            "A": {
+                description: "Memory A",
+                keys: ["Q","z"]
+            },
+            "B": {
+                description: "Memory B",
+                keys: ["Q","x"]
+            },
+            "C": {
+                description: "Memory C",
+                keys: ["Q","c"]
+            },
+            "D": {
+                description: "Memory D",
+                keys: ["Q","j"]
+            },
+            "E": {
+                description: "Memory E",
+                keys: ["Q","k"]
+            },
+            "F": {
+                description: "Memory F",
+                keys: ["Q","l"]
+            },
+            "G": {
+                description: "Gravitational constant",
+                keys: ["q","7","3","9"]
+            },
+            "M": {
+                description: "Memory M",
+                keys: ["Q","m"]
+            },
+            "P": {
+                description: "Permutations",
+                keys: ["q","O"]
+            },
+            "R": {
+                description: "Molar gas constant",
+                keys: ["q","7","2","7"]
+            },
+            "X": {
+                description: "Memory X",
+                keys: ["Q",")"]
+            },
+            "Y": {
+                description: "Memory Y",
+                keys: ["Q","n"]
+            },
+            "a": {
+                description: "Fine structure constant",
+                keys: ["q","7","1","0"]
+            },
+            "e": {
+                description: "Elementary charge constant",
+                keys: ["q","7","2","3"]
+            },
+            "g": {
+                description: "Standard gravitational acceleration",
+                keys: ["q","7","3","5"]
+            },
+            "h": {
+                description: "Planck constant",
+                keys: ["q","7","0","6"]
+            },
+            "k": {
+                description: "Boltzmann constant",
+                keys: ["q","7","2","5"]
+            },
+            "o": {
+                description: "Stefan–Boltzmann constant",
+                keys: ["q","7","3","1"]
+            },
+            "t": {
+                description: "Absolute zero",
+                keys: ["q","7","3","8"]
+            },
+            "u": {
+                description: "Atomic mass unit",
+                keys: ["q","7","1","7"]
+            },
+            "0": {
+                description: "Number 0",
+                keys: ["0"]
+            },
+            "1": {
+                description: "Number 1",
+                keys: ["1"]
+            },
+            "2": {
+                description: "Number 2",
+                keys: ["2"]
+            },
+            "3": {
+                description: "Number 3",
+                keys: ["3"]
+            },
+            "4": {
+                description: "Number 4",
+                keys: ["4"]
+            },
+            "5": {
+                description: "Number 5",
+                keys: ["5"]
+            },
+            "6": {
+                description: "Number 6",
+                keys: ["6"]
+            },
+            "7": {
+                description: "Number 7",
+                keys: ["7"]
+            },
+            "8": {
+                description: "Number 8",
+                keys: ["8"]
+            },
+            "9": {
+                description: "Number 9",
+                keys: ["9"]
+            },
+            ".": {
+                description: "Decimal point",
+                keys: ["."]
+            },
+            ",": {
+                description: "Comma",
+                keys: ["q", ")"]
+            },
+            "'": { // fat C
+                description: "Combinations",
+                keys: ["q", "P"]
+            },
+            "@": { // eulers number
+                description: "Euler's number",
+                keys: ["Q", "K"]
+            },
+            "%": {
+                description: "Percentage",
+                keys: ["q","("]
+            },
+            "(": {
+                description: "Left paranthesis",
+                keys: ["("]
+            },
+            ")": {
+                description: "Right paranthesis",
+                keys: [")"]
+            },
+            ":": {
+                description: "Colon",
+                keys: ["Q", "y"]
+            },
+            "=": {
+                description: "Colon",
+                keys: ["Q", "r"]
+            },
+            "]": { // polish h
+                description: "Planck constant (/2π)",
+                keys: ["q","7","0","9"]
+            },
+            "^": { // italic F
+                description: "Faraday constant",
+                keys: ["q","7","2","2"]
+            },
+            "!": {
+                description: "Factorial",
+                keys: ["q","u"]
+            },
+            "+": {
+                description: "Addition symbol",
+                keys: ["+"]
+            },
+            "*": {
+                description: "Multiplication symbol",
+                keys: ["O"]
+            },
+            "/": {
+                description: "Division symbol",
+                keys: ["P"]
+            },
+            "-": {
+                description: "Subtraction symbol",
+                keys: ["p"]
             }
         }
     }
