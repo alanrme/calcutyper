@@ -1,6 +1,6 @@
 <script lang="ts">
 	let { data } = $props();
-    let display = $state();
+    let display = $state("");
     
     let type = (key) => {
         display += key;
@@ -21,11 +21,13 @@
         </div>
     </div>
     <div class="p-2 row-span-1 overflow-y-auto">
-        {#each Object.entries(data.keymap) as [key,val]}
-            <div>
-                <span class="keymap{data.model}">{val.keys.join("")}</span>
-            </div>
-        {/each}
+        {#key display}
+            {#each display.split("") as key}
+                <div>
+                    <span class="keymap{data.model}">{data.keymap[key].keys.join("")}</span>
+                </div>
+            {/each}
+        {/key}
     </div>
 </div>
 
