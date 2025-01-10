@@ -29,7 +29,7 @@
 <div class="grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 flex" id="ui-container">
     <div class="border-black border-b sm:border-b-0 sm:border-r p-2 row-span-1 flex flex-col">
         <div class="flex flex-row gap-2">
-            <textarea class="rounded-md font{data.model} display{data.model} flex-grow" id="calc-display" bind:value={display} oninput={checkInput}></textarea>
+            <textarea class="rounded-md font{data.model} display{data.model} flex-grow" id="calc-display" spellcheck="false" bind:value={display} oninput={checkInput}></textarea>
             <button class="rounded-md bg-slate-900 text-white px-3" onclick={clear}>Del</button>
         </div>
         <div class="grid grid-flow-row grid-cols-[repeat(auto-fill,5rem)] overflow-y-auto">
