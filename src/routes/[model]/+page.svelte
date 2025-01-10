@@ -5,11 +5,17 @@
     let type = (key) => {
         display += key;
     }
+    let clear = () => {
+        display = display.substring(0, display.length-1)
+    }
 </script>
 
 <div class="grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 flex" id="ui-container">
     <div class="border-black border-b sm:border-b-0 sm:border-r p-2 row-span-1 flex flex-col">
-        <textarea class="font{data.model} display{data.model}" id="calc-display" bind:value={display}></textarea>
+        <div class="flex flex-row gap-2">
+            <textarea class="rounded-md font{data.model} display{data.model} flex-grow" id="calc-display" bind:value={display}></textarea>
+            <button class="rounded-md bg-slate-900 text-white px-3" onclick={clear}>Del</button>
+        </div>
         <div class="grid grid-flow-row grid-cols-[repeat(auto-fill,5rem)] overflow-y-auto">
             {#each Object.keys(data.keymap) as [key]}
                 <div class="rounded-md border border-black m-2 p-2 flex flex-col justify-center items-center" onclick={() => type(key)}>

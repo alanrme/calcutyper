@@ -45,6 +45,10 @@ export const keymaps = [
             "T": {
                 description: "Tera engineering symbol",
                 keys: ["T","3","9"]
+            },
+            "a": {
+                description: "Fine structure constant",
+                keys: ["q","7","3","6"]
             }
         }
     }
