@@ -1,38 +1,10 @@
-# sv
+# Calcutyper
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+For all the middle schoolers out there: A website that will convert text into constants and symbols that can by typed into Casio scientific calculators, complete with keyboard shortcuts.
 
-## Creating a project
+Built with SvelteKit and Tailwind CSS
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Credits
 
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+- Keymap fonts provided by [Casio](https://edu.casio.com/forteachers/er/fontsets/)
+- Calculator display fonts are property of Casio Computer Co., Ltd. and were manually reproduced in [FontStruct](https://www.fontstruct.com/)</a> by me.
