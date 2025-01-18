@@ -205,7 +205,7 @@ export const keymaps = [
                 keys: ["Q", "y"]
             },
             "=": {
-                description: "Colon",
+                description: "Equals to symbol",
                 keys: ["Q", "r"]
             },
             "[": { // fat G
@@ -412,7 +412,7 @@ export const keymaps = [
                 keys: ["Q", "y"]
             },
             "=": {
-                description: "Colon",
+                description: "Equals to symbol",
                 keys: ["Q", "r"]
             },
             "]": { // polish h
